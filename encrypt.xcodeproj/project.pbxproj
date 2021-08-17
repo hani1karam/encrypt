@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		964FA0E28BBE3687C2D5D6E1 /* Pods_encrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5BA31F0B6454CF5C393D99 /* Pods_encrypt.framework */; };
 		D7E3A3B326CBEF42009952AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E3A3B226CBEF42009952AB /* AppDelegate.swift */; };
 		D7E3A3B526CBEF42009952AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E3A3B426CBEF42009952AB /* SceneDelegate.swift */; };
 		D7E3A3B726CBEF42009952AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E3A3B626CBEF42009952AB /* ViewController.swift */; };
 		D7E3A3BA26CBEF42009952AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E3A3B826CBEF42009952AB /* Main.storyboard */; };
 		D7E3A3BC26CBEF44009952AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E3A3BB26CBEF44009952AB /* Assets.xcassets */; };
 		D7E3A3BF26CBEF44009952AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E3A3BD26CBEF44009952AB /* LaunchScreen.storyboard */; };
+		D7E3A3C826CBEF62009952AB /* enryptionFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E3A3C726CBEF62009952AB /* enryptionFunction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045E2F72A9B47B17CEE61C7B /* Pods-encrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encrypt.debug.xcconfig"; path = "Target Support Files/Pods-encrypt/Pods-encrypt.debug.xcconfig"; sourceTree = "<group>"; };
+		7C5BA31F0B6454CF5C393D99 /* Pods_encrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_encrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF36584BB31DD8AD48AABF02 /* Pods-encrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encrypt.release.xcconfig"; path = "Target Support Files/Pods-encrypt/Pods-encrypt.release.xcconfig"; sourceTree = "<group>"; };
 		D7E3A3AF26CBEF42009952AB /* encrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = encrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E3A3B226CBEF42009952AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7E3A3B426CBEF42009952AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		D7E3A3BB26CBEF44009952AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7E3A3BE26CBEF44009952AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7E3A3C026CBEF44009952AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7E3A3C726CBEF62009952AB /* enryptionFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enryptionFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964FA0E28BBE3687C2D5D6E1 /* Pods_encrypt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		265221C4F07E53F4D7CFF133 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C5BA31F0B6454CF5C393D99 /* Pods_encrypt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5673681501F2D79E4EF5A35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				045E2F72A9B47B17CEE61C7B /* Pods-encrypt.debug.xcconfig */,
+				AF36584BB31DD8AD48AABF02 /* Pods-encrypt.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D7E3A3A626CBEF41009952AB = {
 			isa = PBXGroup;
 			children = (
 				D7E3A3B126CBEF42009952AB /* encrypt */,
 				D7E3A3B026CBEF42009952AB /* Products */,
+				D5673681501F2D79E4EF5A35 /* Pods */,
+				265221C4F07E53F4D7CFF133 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +86,7 @@
 				D7E3A3B226CBEF42009952AB /* AppDelegate.swift */,
 				D7E3A3B426CBEF42009952AB /* SceneDelegate.swift */,
 				D7E3A3B626CBEF42009952AB /* ViewController.swift */,
+				D7E3A3C726CBEF62009952AB /* enryptionFunction.swift */,
 				D7E3A3B826CBEF42009952AB /* Main.storyboard */,
 				D7E3A3BB26CBEF44009952AB /* Assets.xcassets */,
 				D7E3A3BD26CBEF44009952AB /* LaunchScreen.storyboard */,
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7E3A3C326CBEF44009952AB /* Build configuration list for PBXNativeTarget "encrypt" */;
 			buildPhases = (
+				94F6CA6D38EB83DACE3AF14E /* [CP] Check Pods Manifest.lock */,
 				D7E3A3AB26CBEF42009952AB /* Sources */,
 				D7E3A3AC26CBEF42009952AB /* Frameworks */,
 				D7E3A3AD26CBEF42009952AB /* Resources */,
+				C2985A893FC87FD9B3574057 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +162,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94F6CA6D38EB83DACE3AF14E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-encrypt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2985A893FC87FD9B3574057 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-encrypt/Pods-encrypt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-encrypt/Pods-encrypt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-encrypt/Pods-encrypt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D7E3A3AB26CBEF42009952AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7E3A3C826CBEF62009952AB /* enryptionFunction.swift in Sources */,
 				D7E3A3B726CBEF42009952AB /* ViewController.swift in Sources */,
 				D7E3A3B326CBEF42009952AB /* AppDelegate.swift in Sources */,
 				D7E3A3B526CBEF42009952AB /* SceneDelegate.swift in Sources */,
@@ -283,6 +356,7 @@
 		};
 		D7E3A3C426CBEF44009952AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 045E2F72A9B47B17CEE61C7B /* Pods-encrypt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +376,7 @@
 		};
 		D7E3A3C526CBEF44009952AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF36584BB31DD8AD48AABF02 /* Pods-encrypt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

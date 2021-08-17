@@ -11,7 +11,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let value = "My value to be encrypted"
+        let key = "MySixteenCharKey"
+        
+        print(key)
+        let encryptedValue = try! value.aesEncrypt(key: key)
+
+        print(encryptedValue)
     }
 
 
